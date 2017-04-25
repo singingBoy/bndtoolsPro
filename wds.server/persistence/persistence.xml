@@ -1,0 +1,24 @@
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+	http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="wds.ManagePU" transaction-type="JTA">
+
+		<jta-data-source>
+			<![CDATA[
+			osgi:javax.sql.DataSource/(name=usimDS)
+			]]>
+		</jta-data-source>
+		
+		<class>wds.server.entity.User</class>
+
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+		<properties>  
+  			<property name="eclipselink.weaving" value="static"/>
+			<property name="eclipselink.ddl-generation.output-mode" value="database"/>
+			<property name="eclipselink.jdbc.batch-writing" value="Buffered"/>
+			<property name="eclipselink.logging.level" value="INFO"/>
+			<property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+		</properties>
+	</persistence-unit>
+</persistence> 

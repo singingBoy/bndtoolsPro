@@ -1,0 +1,86 @@
+一、核心组件
+-------------------
+	//OSGI服务
+    osgi.cmpn;version='[4.3.1,4.3.2)',\
+	//OSGI容器
+	org.apache.felix.gogo.runtime,\
+	org.apache.felix.gogo.shell,\
+	org.apache.felix.gogo.command,\
+	//依赖管理
+	org.apache.felix.dependencymanager,\
+	org.apache.felix.dependencymanager.runtime,\
+	org.apache.felix.dependencymanager.shell,\
+二、REST服务依赖组件：
+-------------------
+	//HTTP服务
+	org.apache.felix.http.servlet-api;version='[1.0,1.1)',\
+	org.apache.felix.http.api;version='[2.3,2.4)',\
+	org.apache.felix.http.jetty;version='[2.3,2.4)',\
+	org.apache.felix.http.whiteboard;version='[2.3,2.4)',\
+	//REST服务接口
+	org.amdatu.web.rest.jaxrs;version=latest,\
+	//REST服务实现
+	org.amdatu.web.rest.wink;version=latest,\
+	//JSON解析
+	com.fasterxml.jackson.core.jackson-annotations,\
+	com.fasterxml.jackson.core.jackson-core,\
+	com.fasterxml.jackson.core.jackson-databind,\
+	com.fasterxml.jackson.jaxrs.jackson-jaxrs-base,\
+	com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider,\
+	//REST测试界面依赖组件
+	org.amdatu.web.rest.doc,\
+	org.amdatu.web.rest.doc.swagger,\
+	org.amdatu.web.rest.doc.swagger.ui,\
+	//静态页面依赖组件
+	org.amdatu.web.resourcehandler,\
+	//文件上传依赖组件
+	org.apache.commons.fileupload,\
+	org.apache.commons.io,\
+三、JPA服务依赖组件：
+-------------------
+	//EclipseLink实现接口
+	org.amdatu.persistence2_1,\
+	//数据库服务接口
+	org.amdatu.jpa.datasourcefactory,\
+	org.amdatu.jpa.adapter.eclipselink,\
+	org.amdatu.jpa.extender,\
+	//EntiryManger接口服务
+	org.amdatu.jta.api,\
+	org.amdatu.jta.manager,\
+	org.amdatu.jta.transactionmanager,\
+	//EclipseLink组件依赖
+	org.eclipse.persistence.antlr,\
+	org.eclipse.persistence.asm,\
+	org.eclipse.persistence.core,\
+	org.eclipse.persistence.jpa,\
+	org.eclipse.persistence.jpa.jpql,\
+	//日志接口
+	org.ops4j.pax.logging.pax-logging-api,\
+	//数据库工厂实现，实例数据库服务接口实现
+	org.ops4j.pax.jdbc,\
+	org.ops4j.base.spi,\
+	//数据库工厂依赖
+	org.apache.commons.lang3,\
+	//SQLSERVER驱动，可换成其它数据库驱动
+	com.microsoft.sqlserver.jdbc,\
+四、MongoDB服务依赖组件：
+-------------------
+	//持久化声明（引用了org.amdatu.persistence2_1组件可不要）
+	javax.persistence,\
+	//MongoDB依赖
+	org.mongojack,\
+	//MongoDB服务组件
+	org.amdatu.mongo,\
+	//MongoDB驱动
+	org.mongodb.mongo-java-driver,\
+	//数据源配置
+	org.apache.felix.configadmin,\
+	//存储解析BSON组件，MongDB使用BSON格式存储
+	de.undercouch.bson4jackson,\
+五、配置文件读取依赖组件（数据库配置文件需用到）：
+-------------------
+	org.amdatu.configurator.api,\
+	org.amdatu.configurator.properties,\
+六、数据库源配置组件：
+-------------------
+	org.apache.felix.configadmin,\

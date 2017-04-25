@@ -1,0 +1,6 @@
+2017-02-07 16:48:31,614 | INFO  | Timer-0          | ContextHandler                   | ty.server.handler.ContextHandler  843 | 33 - org.ops4j.pax.logging.pax-logging-api - 1.7.0 | stopped o.e.j.s.ServletContextHandler{/,null}
+2017-02-07 16:48:31,735 | INFO  | Timer-0          | Activator                        | j.pax.logging.internal.Activator   59 | 33 - org.ops4j.pax.logging.pax-logging-api - 1.7.0 | Disabling SLF4J API support.
+2017-02-07 16:48:31,736 | INFO  | Timer-0          | Activator                        | j.pax.logging.internal.Activator   62 | 33 - org.ops4j.pax.logging.pax-logging-api - 1.7.0 | Disabling Jakarta Commons Logging API support.
+2017-02-07 16:48:31,736 | INFO  | Timer-0          | Activator                        | j.pax.logging.internal.Activator   65 | 33 - org.ops4j.pax.logging.pax-logging-api - 1.7.0 | Disabling Log4J API support.
+2017-02-07 16:48:31,736 | INFO  | Timer-0          | Activator                        | j.pax.logging.internal.Activator   68 | 33 - org.ops4j.pax.logging.pax-logging-api - 1.7.0 | Disabling Avalon Logger API support.
+2017-02-07 16:48:31,736 | INFO  | Timer-0          | Activator                        | j.pax.logging.internal.Activator   71 | 33 - org.ops4j.pax.logging.pax-logging-api - 1.7.0 | Disabling JULI Logger API support.

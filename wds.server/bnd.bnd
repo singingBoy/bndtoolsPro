@@ -1,0 +1,25 @@
+-buildpath: \
+	org.amdatu.persistence2_1,\
+	org.apache.felix.dependencymanager.annotation,\
+	javax.servlet,\
+	javax.ws.rs.jsr311-api,\
+	wds.commons;version=latest,\
+	org.apache.commons.lang,\
+	com.fasterxml.jackson.core.jackson-annotations,\
+	com.fasterxml.jackson.core.jackson-databind,\
+	org.amdatu.persistence2_1,\
+	com.fasterxml.jackson.core.jackson-core,\
+	com.fasterxml.jackson.jaxrs.jackson-jaxrs-base,\
+	com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider,\
+	javax.servlet
+-includeresource: \
+	META-INF/persistence.xml=persistence/persistence.xml
+Meta-Persistence: META-INF/persistence.xml
+Private-Package: \
+	wds.server.impl,\
+	wds.server.rest
+Export-Package: \
+	wds.server.api,\
+	wds.server.entity
+	
+

@@ -1,0 +1,17 @@
+-buildpath: \
+	org.apache.commons.lang,\
+	com.fasterxml.jackson.core.jackson-annotations,\
+	com.fasterxml.jackson.core.jackson-databind,\
+	org.amdatu.persistence2_1,\
+	com.fasterxml.jackson.core.jackson-core,\
+	com.fasterxml.jackson.jaxrs.jackson-jaxrs-base,\
+	com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider,\
+	javax.servlet,\
+	lib/json-20140107.jar;version=file
+	
+-includeresource: lib=lib
+Bundle-ClassPath: .,\
+	lib/json-20140107.jar
+Export-Package: \
+	org.json,\
+	wds.commons.apis

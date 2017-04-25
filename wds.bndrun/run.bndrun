@@ -1,0 +1,66 @@
+-runfw: org.apache.felix.framework;version=4
+-runee: JavaSE-1.8
+-runprovidedcapabilities: ${native_capability}
+
+-resolve.effective: active;skip:="osgi.service"
+
+## Uncomment if you need to change the HTTP port
+-runproperties: org.osgi.service.http.port=8080
+
+-runbundles: \
+	com.fasterxml.jackson.core.jackson-annotations;version=2.6.3,\
+	com.fasterxml.jackson.core.jackson-core;version=2.6.3,\
+	com.fasterxml.jackson.core.jackson-databind;version=2.6.3,\
+	com.fasterxml.jackson.jaxrs.jackson-jaxrs-base;version=2.6.3,\
+	com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider;version=2.6.3,\
+	org.amdatu.web.resourcehandler;version=latest,\
+	org.amdatu.web.rest.doc;version=latest,\
+	org.amdatu.web.rest.jaxrs;version=latest,\
+	org.apache.felix.gogo.command;version='[0.12.0,0.12.1)',\
+	org.apache.felix.gogo.runtime;version='[0.10.0,0.10.1)',\
+	org.apache.felix.gogo.shell;version='[0.10.0,0.10.1)',\
+	org.apache.felix.http.servlet-api;version='[1.0,1.1)',\
+	org.apache.felix.http.api;version='[2.3,2.4)',\
+	org.apache.felix.http.jetty;version='[2.3,2.4)',\
+	org.apache.felix.http.whiteboard;version='[2.3,2.4)',\
+	org.apache.felix.log,\
+	osgi.cmpn;version='[4.3.1,4.3.2)',\
+	org.apache.commons.lang3,\
+	org.amdatu.jpa.datasourcefactory,\
+	org.amdatu.jpa.extender,\
+	org.amdatu.jta.manager,\
+	org.amdatu.jta.transactionmanager,\
+	org.amdatu.persistence2_1,\
+	org.eclipse.persistence.antlr,\
+	org.eclipse.persistence.asm,\
+	org.eclipse.persistence.core,\
+	org.eclipse.persistence.jpa,\
+	org.eclipse.persistence.jpa.jpql,\
+	org.amdatu.jpa.adapter.eclipselink,\
+	org.apache.felix.metatype,\
+	org.apache.felix.eventadmin,\
+	org.apache.felix.configadmin,\
+	org.ops4j.pax.logging.pax-logging-api,\
+	org.ops4j.pax.logging.pax-logging-service,\
+	org.apache.felix.dependencymanager;version='[4,5)',\
+	org.apache.felix.dependencymanager.runtime;version='[4,5)',\
+	org.apache.felix.dependencymanager.shell;version='[4,5)',\
+	org.amdatu.jta.api,\
+	org.amdatu.configurator.api,\
+	org.amdatu.configurator.properties,\
+	org.apache.commons.fileupload,\
+	org.apache.commons.io,\
+	org.apache.commons.codec,\
+	org.ops4j.pax.jdbc,\
+	org.ops4j.base.spi,\
+	org.amdatu.web.filters.cors,\
+	org.amdatu.web.rest.wink;version='[1.0.0, 3.0.0)',\
+	org.amdatu.web.rest.doc.swagger;version='[1.0.4,1.0.11)',\
+	org.amdatu.web.rest.doc.swagger.ui;version='[1.0.3,1.0.9)',\
+	com.mysql.jdbc,\
+	org.ops4j.pax.jdbc.mysql,\
+	org.apache.commons.lang;version=2.6.0,\
+	wds.server;version=latest,\
+	wds.commons;version=latest
+
+
